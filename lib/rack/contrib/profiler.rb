@@ -6,6 +6,15 @@ module Rack
   #
   # Pass the :printer option to pick a different result format.
   class Profiler
+    # Notes on the C constants
+    # RubyProf::PROCESS_TIME - Measure process time.  This is default.  It is implemented using the clock functions in the C Runtime library.
+    # RubyProf::WALL_TIME - Measure wall time using gettimeofday on Linx and GetLocalTime on Windows
+    # RubyProf::CPU_TIME - Measure time using the CPU clock counter.  This mode is only supported on Pentium or PowerPC platforms.
+    # RubyProf::ALLOCATIONS - Measure object allocations.  This requires a patched Ruby interpreter.
+    # RubyProf::MEMORY - Measure memory size.  This requires a patched Ruby interpreter.
+    # RubyProf::GC_RUNS - Measure number of garbage collections.  This requires a patched Ruby interpreter.
+    # RubyProf::GC_TIME - Measure time spent doing garbage collection.  This requires a patched Ruby interpreter.*/
+
     MODES = %w(
       process_time
       wall_time
