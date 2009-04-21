@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
 
   s.name = 'rack-contrib'
   s.version = '0.9.1'
-  s.date = '2009-03-07'
+  s.date = '2009-04-21'
 
   s.description = "Contributed Rack Middleware and Utilities"
   s.summary     = "Contributed Rack Middleware and Utilities"
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     Rakefile
     lib/rack/contrib.rb
     lib/rack/contrib/accept_format.rb
+    lib/rack/contrib/analytics.rb
     lib/rack/contrib/backstage.rb
     lib/rack/contrib/bounce_favicon.rb
     lib/rack/contrib/callbacks.rb
