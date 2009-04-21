@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
 
   s.name = 'rack-contrib'
   s.version = '0.9.1'
-  s.date = '2009-03-07'
+  s.date = '2009-04-21'
 
   s.description = "Contributed Rack Middleware and Utilities"
   s.summary     = "Contributed Rack Middleware and Utilities"
@@ -81,7 +81,7 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = true
   s.homepage = "http://github.com/rack/rack-contrib/"
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "rack-contrib", "--main", "README"]
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "rack-contrib", "--main", "README.rdoc"]
   s.require_paths = %w[lib]
   s.rubygems_version = '1.1.1'
 end
