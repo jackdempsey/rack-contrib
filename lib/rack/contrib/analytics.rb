@@ -1,13 +1,12 @@
 require 'ruby-prof'
 require 'ruby-debug'
-require 'benchmark'
 
 module Rack
   # Set the profile=process_time query parameter to download a
   # calltree profile of the request.
   #
   # Pass the :printer option to pick a different result format.
-  class Profiler
+  class Analytics
     MODES = %w(
       process_time
       wall_time
