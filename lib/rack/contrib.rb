@@ -7,6 +7,7 @@ module Rack
     end
   end
 
+  autoload :Analytics,                  "rack/contrib/analytics"
   autoload :BounceFavicon,              "rack/contrib/bounce_favicon"
   autoload :CSSHTTPRequest,             "rack/contrib/csshttprequest"
   autoload :Deflect,                    "rack/contrib/deflect"
